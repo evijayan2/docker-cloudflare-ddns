@@ -5,6 +5,7 @@
 # Load ZONE and SUBDOMAIN vars from Docker Swarm secrets, if available:
 if [ -f "$SUBDOMAIN_FILE" ]; then
     SUBDOMAIN=$(cat $SUBDOMAIN_FILE)
+    echo $SUBDOMAIN
 fi
 if [ -f "$ZONE_FILE" ]; then
     ZONE=$(cat $ZONE_FILE)
