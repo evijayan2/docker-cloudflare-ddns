@@ -67,10 +67,10 @@ getPublicIpAddress() {
   fi
 }
 
-getDnsRecordName(sub) {
-  echo " get dns record name: $sub"
-  if [ ! -z "$sub" ]; then
-    echo $sub.$ZONE
+getDnsRecordName() {
+  echo " get dns record name: $1"
+  if [ ! -z "$1" ]; then
+    echo $1.$ZONE
   else
     echo $ZONE
   fi
