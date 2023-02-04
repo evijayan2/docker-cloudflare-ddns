@@ -68,7 +68,6 @@ getPublicIpAddress() {
 }
 
 getDnsRecordName() {
-  echo " get dns record name: $1"
   if [ ! -z "$1" ]; then
     echo $1.$ZONE
   else
